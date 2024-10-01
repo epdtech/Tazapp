@@ -6,10 +6,10 @@ import streamlit as st
 import google.generativeai as genai
 # genai.configure(api_key=os.environ["API_KEY"])
 
-genai.configure(api_key="AIzaSyCSlkKuF8BFF82FuHUBUnz5MZ6xTO4lS3M")
+# genai.configure(api_key="AIzaSyCSlkKuF8BFF82FuHUBUnz5MZ6xTO4lS3M")
 
-# api_key = st.secrets=["GOOGLE_API_KEY"]
-# genai.configure(api_key=api_key)
+api_key = st.secrets=["GOOGLE_API_KEY"]
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 # response = model.generate_content("Write a story about a magic backpack.")
 # print(response.text)
