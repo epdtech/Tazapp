@@ -7,7 +7,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 
-model = genai.GenerativeModel('gemini-3.0-pro')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 
 
