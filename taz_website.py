@@ -7,7 +7,7 @@ api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 
 
-model = genai.GenerativeModel('gemini-2.5-flash')
+model = genai.GenerativeModel('gemini-3.0-flash')
 
 
 
@@ -107,5 +107,6 @@ with col2:
 st.write("CONTACT")
 st.title("For any inquiries, please contac me at:")
 st.write("taz@taz.com")
+
 
 
